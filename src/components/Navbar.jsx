@@ -1,5 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
+const navigation = [
+  {
+    href: "/",
+    label: "Home",
+  },
+  {
+    href: "/",
+    label: "About PKM",
+  },
+  {
+    href: "/",
+    label: "Timeline",
+  },
+  {
+    href: "/",
+    label: "Our Team",
+  },
+  {
+    href: "/",
+    label: "Information & Resources",
+  },
+];
 
 export default function Navbar() {
   return (
@@ -26,50 +48,17 @@ export default function Navbar() {
             </div>
           </Link>
 
-          <nav className="hidden lg:block">
-            <ul className="flex item-center gap-1 text-sm font-medium">
-              <li>
-                <a
-                  className="block text-shadow-md px-5 py-2.5 text-black/75 text-base hover:text-black transition-transform"
-                  href="#"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  className="block text-shadow-md px-5 py-2.5 text-black/75 text-base hover:text-black transition-transform"
-                  href="#"
-                >
-                  About PKM
-                </a>
-              </li>
-              <li>
-                <a
-                  className="block text-shadow-md px-5 py-2.5 text-black/75 text-base hover:text-black transition-transform"
-                  href="#"
-                >
-                  Timeline
-                </a>
-              </li>
-              <li>
-                <a
-                  className="block text-shadow-md px-5 py-2.5 text-black/75 text-base hover:text-black transition-transform"
-                  href="#"
-                >
-                  Our Team
-                </a>
-              </li>
-              <li>
-                <a
-                  className="block text-shadow-md px-5 py-2.5 text-black/75 text-base hover:text-black transition-transform"
-                  href="#"
-                >
-                  Information & Resources
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="flex flex-wrap gap-7 text-medium font-medium text-slate-600">
+            {navigation.map((item) => (
+              <Link
+                className="hover:text-slate-950"
+                href={item.href}
+                key={item.href}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </header>
