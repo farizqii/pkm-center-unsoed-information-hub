@@ -14,10 +14,10 @@ export default function Homepage() {
       </div>
 
       <div className="flex w-full flex-col lg:w-7/12">
-        <h1 className="font-black text-center xl:text-left md:text-3xl lg:text-4xl">
+        <h1 className="font-black text-center xl:text-left sm:text-3xl md:text-4xl">
           Program Kreativitas Mahasiswa Center
           <br />
-          <span className="font-light text-sm md:text-2xl lg:text-3xl">
+          <span className="font-light text-sm sm:text-2xl md:text-3xl">
             Universitas Jenderal Soedirman
           </span>
         </h1>
