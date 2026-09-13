@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
-  { href: "/", label: "Home" },
+  { id: "Homepage", label: "Home" },
   { href: "/", label: "About PKM" },
   { href: "/", label: "Timeline" },
   { href: "/", label: "Our Team" },
@@ -14,6 +14,14 @@ const navigation = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
 
   return (
     <header className="fixed top-0 z-50 w-full backdrop-blur-sm">
@@ -42,21 +50,32 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex md:flex-wrap md:gap-7 text-medium font-medium text-slate-600">
-            {navigation.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="hover:text-slate-950 transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navigation.map((item) =>
+              item.id ? (
+                <button
+                  key={item.label}
+                  type="button"
+                  onClick={() => scrollToSection(item.id)}
+                  className="cursor-pointer hover:text-slate-950 transition-colors"
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="hover:text-slate-950 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ),
+            )}
           </nav>
 
           {/* Mobile 3-Stripe */}
           <button
             type="button"
-            className="p-2 text-slate-700 hover:text-black lg:hidden focus:outline-none"
+            className="cursor-pointer p-2 text-slate-700 hover:text-black lg:hidden focus:outline-none"
             aria-label="Toggle Navigation Menu"
             aria-expanded={isOpen}
             onClick={() => setIsOpen((prev) => !prev)}
@@ -99,16 +118,27 @@ export default function Navbar() {
         {isOpen && (
           <nav className="border-t border-slate-100 bg-white px-5 py-4 shadow-md lg:hidden">
             <div className="flex flex-col gap-4 text-medium font-medium text-slate-600">
-              {navigation.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="hover:text-slate-950 transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navigation.map((item) =>
+                item.id ? (
+                  <button
+                    key={item.label}
+                    type="button"
+                    onClick={() => scrollToSection(item.id)}
+                    className="cursor-pointer text-left hover:text-slate-950 transition-colors"
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="hover:text-slate-950 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ),
+              )}
             </div>
           </nav>
         )}

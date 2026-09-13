@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Homepage() {
   return (
-    <main className="mx-auto flex min-h-screen w-full flex-col items-center justify-center gap-12 px-6 py-20 xl:flex-row lg:px-24">
+    <main
+      id="Homepage"
+      className="mx-auto flex min-h-screen w-full flex-col scroll-mt-16 items-center justify-center gap-12 px-6 py-20 xl:flex-row lg:px-24"
+    >
       <div className="flex aspect-square w-full max-w-md items-center justify-center bg-transparent">
         <Image
           src="/brand-logo.png"
@@ -49,10 +52,10 @@ export default function Homepage() {
         </div>
 
         <div className="flex flex-col gap-4 xl:flex-row">
-          <button className="rounded-xl border-2 border-white bg-black px-6 py-2 text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-black">
+          <button className="cursor-pointer rounded-xl border-2 border-white bg-black px-6 py-2 text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-black">
             Our Team
           </button>
-          <button className="rounded-xl border-2 border-white bg-black px-6 py-2 text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-black">
+          <button className="cursor-pointer rounded-xl border-2 border-white bg-black px-6 py-2 text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-black">
             Information & Resources
           </button>
         </div>
