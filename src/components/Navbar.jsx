@@ -7,7 +7,6 @@ import Link from "next/link";
 const navigation = [
   { id: "Homepage", label: "Home" },
   { href: "/", label: "About PKM" },
-  { href: "/", label: "Timeline" },
   { href: "/", label: "Our Team" },
   { href: "/", label: "Information & Resources" },
 ];
