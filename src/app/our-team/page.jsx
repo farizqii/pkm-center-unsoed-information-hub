@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-export default function Home() {
+
+export default function OurTeamPage() {
   return (
     <main
       id="Homepage"
@@ -8,7 +9,7 @@ export default function Home() {
     >
       <div className="flex aspect-square w-full max-w-md items-center justify-center bg-transparent">
         <Image
-          src="/logo-pkm-center.png"
+          src="/brand-logo.png"
           alt="PKM Center Unsoed"
           width={800}
           height={800}
@@ -17,10 +18,9 @@ export default function Home() {
       </div>
 
       <div className="flex w-full flex-col lg:w-7/12">
-        <h1 className="font-bold text-center xl:text-left sm:text-3xl md:text-4xl">
-          Program Kreativitas Mahasiswa Center
-          <br />
-          <span className="font-semibold text-sm sm:text-2xl md:text-3xl">
+        <h1 className="font-black text-center xl:text-left sm:text-3xl md:text-4xl">
+          Our Team <br />
+          <span className="font-light text-sm sm:text-2xl md:text-3xl">
             Universitas Jenderal Soedirman
           </span>
         </h1>
@@ -54,13 +54,13 @@ export default function Home() {
         <div className="flex flex-col gap-4 xl:flex-row">
           <Link
             href="/our-team"
-            className="cursor-pointer rounded-2xl border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-semibold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
+            className="cursor-pointer rounded-2xl border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
           >
             Our Team
           </Link>
           <Link
             href="/information"
-            className="cursor-pointer rounded-2xl border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-semibold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
+            className="cursor-pointer rounded-2xl border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
           >
             Information & Resources
           </Link>

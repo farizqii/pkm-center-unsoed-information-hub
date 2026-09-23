@@ -1,10 +1,17 @@
 import "./globals.css";
+import { Montserrat } from "next/font/google";
 import Navbar from "../components/Navbar.jsx";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "PKM Center Unsoed Information Hub",
   description:
-    "Aplikasi Information Hub PKM Center Unsoed adalah sebuah website informasional tentang Program Kreativitas Mahasiswa serta company profile interaktif kepada tim pengelola PKM Center Unsoed sendiri. Tujuan aplikasi ini digunakan untuk memberikan wawasan yang lebih lengkap tentang Program Kreativitas Mahasiswa kepada mahasiswa/i Unsoed",
+    "Aplikasi Information Hub PKM Center Unsoed adalah sebuah website informasional...",
 };
 
 export default function RootLayout({
@@ -14,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
-      <body className="min-h-screen border-b-4 bg-gray-200 font-normal text-charcoal">
+      <body
+        className={`${montserrat.className} min-h-screen border-b-4 bg-[#02143C] font-normal text-white`}
+      >
         <Navbar />
         <main className="px-8 pb-15 pt-8">{children}</main>
       </body>

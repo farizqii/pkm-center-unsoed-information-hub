@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Homepage() {
+export default function InformationPage() {
   return (
     <main
       id="Homepage"
@@ -18,16 +19,15 @@ export default function Homepage() {
 
       <div className="flex w-full flex-col lg:w-7/12">
         <h1 className="font-black text-center xl:text-left sm:text-3xl md:text-4xl">
-          Program Kreativitas Mahasiswa Center
-          <br />
+          Information & Resources <br />
           <span className="font-light text-sm sm:text-2xl md:text-3xl">
             Universitas Jenderal Soedirman
           </span>
         </h1>
 
-        <hr className="my-6 border-t border-black/30" />
+        <hr className="my-6 border-t border-[#F2A902]" />
 
-        <div className="mb-8 flex flex-col gap-4 font-extralight text-xs text-center xl:text-left text-gray-800 md:text-base">
+        <div className="mb-8 flex flex-col gap-4 font-extralight text-xs text-center xl:text-left md:text-base">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue
             sapien, mollis vel arcu id, efficitur eleifend urna. Cras sed
@@ -52,12 +52,18 @@ export default function Homepage() {
         </div>
 
         <div className="flex flex-col gap-4 xl:flex-row">
-          <button className="cursor-pointer rounded-xl border-2 border-white bg-black px-6 py-2 text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-black">
+          <Link
+            href="/our-team"
+            className="cursor-pointer rounded-2xl border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
+          >
             Our Team
-          </button>
-          <button className="cursor-pointer rounded-xl border-2 border-white bg-black px-6 py-2 text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-black">
+          </Link>
+          <Link
+            href="/information"
+            className="cursor-pointer rounded-2xl border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-bold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
+          >
             Information & Resources
-          </button>
+          </Link>
         </div>
       </div>
     </main>

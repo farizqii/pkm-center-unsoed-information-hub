@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
-  { id: "Homepage", label: "Home" },
+  { href: "/", label: "Home" },
   { href: "/", label: "About PKM" },
-  { href: "/", label: "Our Team" },
-  { href: "/", label: "Information & Resources" },
+  { href: "/our-team", label: "Our Team" },
+  { href: "/information", label: "Information & Resources" },
 ];
 
 export default function Navbar() {
@@ -24,23 +24,23 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 z-50 w-full backdrop-blur-sm">
-      <div className="w-full bg-white shadow-lg">
-        <div className="flex h-16 items-center justify-between px-5">
+      <div className="w-full bg-linear-to-b from-[#001133] via-[#002266] to-[#003399] border-b border-white/10 shadow-md shadow-white">
+        <div className="flex h-16 items-center justify-between px-5 xl:px-55">
           {/* Logo */}
           <Link href="/">
             <div className="flex flex-1 items-center gap-3">
               <Image
-                src="/brand-logo.png"
+                src="/logo-pkm-center.png"
                 alt="Euqin's Pizzas Logo"
                 width={50}
                 height={50}
                 className="object-contain"
               />
               <div className="flex flex-col leading-none">
-                <span className="text-lg text-shadow-md font-black tracking-tight text-black">
+                <span className="text-lg text-shadow-md font-bold tracking-tight text-white">
                   PKM Center Unsoed
                 </span>
-                <span className="-mt-2 text-sm text-shadow-md font-normal text-neutral-800">
+                <span className="-mt-2 text-sm text-shadow-md font-medium text-white">
                   Information Hub
                 </span>
               </div>
@@ -48,14 +48,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex md:flex-wrap md:gap-7 text-medium font-medium text-slate-600">
+          <nav className="hidden lg:flex md:flex-wrap md:gap-15 text-md font-semibold text-white">
             {navigation.map((item) =>
               item.id ? (
                 <button
                   key={item.label}
                   type="button"
                   onClick={() => scrollToSection(item.id)}
-                  className="cursor-pointer hover:text-slate-950 transition-colors"
+                  className="cursor-pointer hover:text-white/80 transition-colors"
                 >
                   {item.label}
                 </button>
@@ -63,7 +63,7 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="hover:text-slate-950 transition-colors"
+                  className="hover:text-white/80 transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
           {/* Mobile 3-Stripe */}
           <button
             type="button"
-            className="cursor-pointer p-2 text-slate-700 hover:text-black lg:hidden focus:outline-none"
+            className="cursor-pointer p-2 text-white hover:text-white/80 lg:hidden focus:outline-none"
             aria-label="Toggle Navigation Menu"
             aria-expanded={isOpen}
             onClick={() => setIsOpen((prev) => !prev)}
@@ -115,15 +115,15 @@ export default function Navbar() {
 
         {/* Mobile Dropdown Panel */}
         {isOpen && (
-          <nav className="border-t border-slate-100 bg-white px-5 py-4 shadow-md lg:hidden">
-            <div className="flex flex-col gap-4 text-medium font-medium text-slate-600">
+          <nav className="border-t border-white bg-[#003399] px-5 py-4 shadow-md lg:hidden">
+            <div className="flex flex-col gap-4 text-medium font-medium text-white">
               {navigation.map((item) =>
                 item.id ? (
                   <button
                     key={item.label}
                     type="button"
                     onClick={() => scrollToSection(item.id)}
-                    className="cursor-pointer text-left hover:text-slate-950 transition-colors"
+                    className="cursor-pointer text-left hover:text-white/80 transition-colors"
                   >
                     {item.label}
                   </button>
@@ -132,7 +132,7 @@ export default function Navbar() {
                     key={item.label}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="hover:text-slate-950 transition-colors"
+                    className="hover:text-white/80  transition-colors"
                   >
                     {item.label}
                   </Link>
