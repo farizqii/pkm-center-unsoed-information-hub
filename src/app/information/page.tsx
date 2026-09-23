@@ -9,7 +9,7 @@ export default function InformationPage() {
     >
       <div className="flex aspect-square w-full max-w-md items-center justify-center bg-transparent">
         <Image
-          src="/brand-logo.png"
+          src="/logo-pkm-center.png"
           alt="PKM Center Unsoed"
           width={800}
           height={800}
