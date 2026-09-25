@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main
       id="Homepage"
-      className="mx-auto flex min-h-screen w-full flex-col scroll-mt-16 items-center justify-center gap-12 px-6 py-20 xl:flex-row lg:px-24"
+      className=" relative mx-auto flex min-h-screen w-full flex-col scroll-mt-16 items-center justify-center gap-12 px-6 py-20 xl:flex-row lg:px-24"
     >
       <div className="flex aspect-square w-full max-w-md items-center justify-center bg-transparent">
         <Image

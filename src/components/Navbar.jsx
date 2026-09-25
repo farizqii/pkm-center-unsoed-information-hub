@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion, AnimatePresence } from "motion/react";
 
 const navigation = [
   { href: "/", label: "Home" },
@@ -79,68 +80,88 @@ export default function Navbar() {
             aria-expanded={isOpen}
             onClick={() => setIsOpen((prev) => !prev)}
           >
-            {isOpen ? (
-              // "X" Close Icon
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              // 3-Stripe Hamburger Icon
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
+            <AnimatePresence mode="wait" initial={false}>
+              {isOpen ? (
+                // "X" Close Icon
+                <motion.svg
+                  key="close"
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </motion.svg>
+              ) : (
+                // 3-Stripe Hamburger Icon
+                <motion.svg
+                  key="hamburger"
+                  initial={{ rotate: 90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </motion.svg>
+              )}
+            </AnimatePresence>
           </button>
         </div>
 
         {/* Mobile Dropdown Panel */}
-        {isOpen && (
-          <nav className="border-t border-white bg-[#003399] px-5 py-4 shadow-md lg:hidden">
-            <div className="flex flex-col gap-4 text-medium font-medium text-white">
-              {navigation.map((item) =>
-                item.id ? (
-                  <button
-                    key={item.label}
-                    type="button"
-                    onClick={() => scrollToSection(item.id)}
-                    className="cursor-pointer text-left hover:text-white/80 transition-colors"
-                  >
-                    {item.label}
-                  </button>
-                ) : (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="hover:text-white/80  transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ),
-              )}
-            </div>
-          </nav>
-        )}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.nav
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="overflow-hidden border-t border-white/10 bg-[#003399] px-5 shadow-md lg:hidden"
+            >
+              <div className="flex flex-col gap-4 py-4 text-medium font-medium text-white">
+                {navigation.map((item) =>
+                  item.id ? (
+                    <button
+                      key={item.label}
+                      type="button"
+                      onClick={() => scrollToSection(item.id)}
+                      className="cursor-pointer text-left hover:text-white/80 transition-colors"
+                    >
+                      {item.label}
+                    </button>
+                  ) : (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      onClick={() => setIsOpen(false)}
+                      className="hover:text-white/80 transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  ),
+                )}
+              </div>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
