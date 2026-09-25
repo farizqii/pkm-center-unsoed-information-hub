@@ -34,7 +34,7 @@ export default function RootLayout({
               width={400}
               height={400}
               sizes="(max-width: 768px) 50vw, 400px"
-              className="absolute -left-20 top-0 h-auto w-1/2 md:left-0 md:w-100"
+              className="absolute -left-30 top-0 h-auto w-1/2 lg:left-0 lg:w-100"
             />
             <Image
               src="/glassesRight.png"
@@ -42,7 +42,7 @@ export default function RootLayout({
               width={400}
               height={400}
               sizes="(max-width: 768px) 50vw, 400px"
-              className="absolute -right-20 top-0 h-auto w-1/2 md:right-0 md:w-100"
+              className="absolute -right-30 top-0 h-auto w-1/2 lg:right-0 lg:w-100"
             />
           </div>
           {children}
