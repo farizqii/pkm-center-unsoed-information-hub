@@ -29,15 +29,16 @@ export default function RootLayout({
         <Navbar />
 
         {/* Global Website Background Glass Elements */}
-        <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+        <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden select-none">
           <Image
             src="/glassesLeft.png"
             alt=""
             width={460}
             height={1080}
             priority
+            draggable={false}
             sizes="(max-width: 768px) 35vw, 400px"
-            className="absolute -left-16 sm:-left-20 lg:left-0 top-0 h-full w-auto max-w-70 sm:max-w-none object-cover object-left"
+            className="absolute -left-16 sm:-left-20 lg:left-0 top-0 h-full w-auto max-w-70 sm:max-w-none object-cover object-left select-none"
           />
           <Image
             src="/glassesRight.png"
@@ -45,8 +46,9 @@ export default function RootLayout({
             width={460}
             height={1080}
             priority
+            draggable={false}
             sizes="(max-width: 768px) 35vw, 400px"
-            className="absolute -right-16 sm:-right-20 lg:right-0 top-0 h-full w-auto max-w-70 sm:max-w-none object-cover object-right"
+            className="absolute -right-16 sm:-right-20 lg:right-0 top-0 h-full w-auto max-w-70 sm:max-w-none object-cover object-right select-none"
           />
         </div>
 
