@@ -5,8 +5,9 @@ export default function AboutPKM() {
   return (
     <section
       id="AboutPKM"
-      className="min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-12 xl:flex-row"
+      className="py-15 px-15 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-12 xl:flex-row"
     >
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[1600px] xl:w-[1600px] xl:h-[600px] bg-black/15 rounded-full blur-3xl -z-10"></div>
       <div className="flex aspect-square w-full max-w-md items-center justify-center bg-transparent">
         <Image
           src="/logo-pkm-center.png"
