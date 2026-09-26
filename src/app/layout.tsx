@@ -23,10 +23,35 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body
-        className={`${montserrat.className} min-h-screen border-b-4 bg-[#02143C] font-normal text-white`}
+        className={`${montserrat.className} min-h-screen bg-[#02143C] font-normal text-white`}
       >
         <Navbar />
-        <main className="relative px-8 pb-15 pt-8">{children}</main>
+
+        {/* Global Website Background Glass Elements */}
+        <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+          <Image
+            src="/glassesLeft.png"
+            alt=""
+            width={460}
+            height={1080}
+            priority
+            sizes="(max-width: 768px) 35vw, 400px"
+            className="absolute -left-16 sm:-left-20 lg:left-0 top-0 h-full w-auto max-w-[280px] sm:max-w-none object-cover object-left"
+          />
+          <Image
+            src="/glassesRight.png"
+            alt=""
+            width={460}
+            height={1080}
+            priority
+            sizes="(max-width: 768px) 35vw, 400px"
+            className="absolute -right-16 sm:-right-20 lg:right-0 top-0 h-full w-auto max-w-[280px] sm:max-w-none object-cover object-right"
+          />
+        </div>
+
+        <div id="app" data-v-app className="relative z-0">
+          {children}
+        </div>
       </body>
     </html>
   );

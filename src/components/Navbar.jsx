@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "motion/react";
 
 const navigation = [
   { href: "/", label: "Home" },
-  { href: "/", label: "About PKM" },
+  { href: "/#AboutPKM", label: "About PKM" },
   { href: "/our-team", label: "Our Team" },
   { href: "/information", label: "Information & Resources" },
 ];

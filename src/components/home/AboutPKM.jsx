@@ -3,28 +3,10 @@ import Link from "next/link";
 
 export default function AboutPKM() {
   return (
-    <main
-      id="Homepage"
-      className=" relative mx-auto flex min-h-screen w-full flex-col scroll-mt-16 items-center justify-center gap-12 px-6 py-20 xl:flex-row lg:px-24"
+    <section
+      id="AboutPKM"
+      className="scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-12 px-6 py-12 md:py-16 xl:flex-row lg:px-24"
     >
-      <div className="pointer-events-none absolute -inset-10 -z-10 overflow-hidden">
-        <Image
-          src="/glassesLeft.png"
-          alt="glassLeft"
-          width={400}
-          height={400}
-          sizes="(max-width: 768px) 50vw, 400px"
-          className="absolute -left-30 top-0 h-auto w-1/2 lg:left-0 lg:w-100"
-        />
-        <Image
-          src="/glassesRight.png"
-          alt="glassRight"
-          width={400}
-          height={400}
-          sizes="(max-width: 768px) 50vw, 400px"
-          className="absolute -right-30 top-0 h-auto w-1/2 lg:right-0 lg:w-100"
-        />
-      </div>
       <div className="flex aspect-square w-full max-w-md items-center justify-center bg-transparent">
         <Image
           src="/logo-pkm-center.png"
@@ -85,6 +67,6 @@ export default function AboutPKM() {
           </Link>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
