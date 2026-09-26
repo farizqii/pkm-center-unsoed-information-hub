@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between px-5 xl:px-55">
           {/* Logo */}
           <Link href="/">
-            <div className="flex flex-1 items-center gap-3">
+            <div className="flex flex-1 items-center gap-3 hover:scale-105 transition-transform ease-in-out">
               <Image
                 src="/logo-pkm-center.png"
                 alt="Euqin's Pizzas Logo"
@@ -56,7 +56,7 @@ export default function Navbar() {
                   key={item.label}
                   type="button"
                   onClick={() => scrollToSection(item.id)}
-                  className="cursor-pointer hover:text-white/80 transition-colors"
+                  className="cursor-pointer hover:text-white/80 hover:scale-105 transition-transform ease-in-out"
                 >
                   {item.label}
                 </button>
@@ -64,7 +64,7 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="hover:text-white/80 transition-colors"
+                  className="hover:text-white/80 hover:scale-105 transition-transform ease-in-out"
                 >
                   {item.label}
                 </Link>
@@ -143,7 +143,7 @@ export default function Navbar() {
                       key={item.label}
                       type="button"
                       onClick={() => scrollToSection(item.id)}
-                      className="cursor-pointer text-left hover:text-white/80 transition-colors"
+                      className="cursor-pointer text-left hover:text-white/80 hover:scale-101 transition-transform ease-in-out"
                     >
                       {item.label}
                     </button>
@@ -152,7 +152,7 @@ export default function Navbar() {
                       key={item.label}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className="hover:text-white/80 transition-colors"
+                      className="hover:text-white/80 hover:scale-101 transition-transform ease-in-out"
                     >
                       {item.label}
                     </Link>
