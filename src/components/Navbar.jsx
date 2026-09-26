@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 
 const navigation = [
-  { href: "/", label: "Home" },
+  { href: "/#HeroSection", label: "Home" },
   { href: "/#AboutPKM", label: "About PKM" },
   { href: "/our-team", label: "Our Team" },
   { href: "/information", label: "Information & Resources" },
@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="w-full bg-linear-to-b from-[#001133] via-[#002266] to-[#003399] border-b border-white/10 shadow-md shadow-white">
         <div className="flex h-16 items-center justify-between px-5 xl:px-55">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/#HeroSection">
             <div className="flex flex-1 items-center gap-3 hover:scale-105 transition-transform ease-in-out">
               <Image
                 src="/logo-pkm-center.png"
