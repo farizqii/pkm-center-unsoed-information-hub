@@ -30,25 +30,39 @@ export default function RootLayout({
 
         {/* Global Website Background Glass Elements */}
         <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden select-none">
+          {/* Mobile / tablet background image */}
           <Image
             src="/glassesLeft.png"
-            alt=""
+            alt="Middle Glass Element"
+            fill
+            priority
+            draggable={false}
+            sizes="100vw"
+            className="w-full h-full object-cover object-center scale-125 lg:hidden"
+          />
+
+          {/* Desktop left glass */}
+          <Image
+            src="/glassesLeft.png"
+            alt="Left Glass Element"
             width={460}
             height={1080}
             priority
             draggable={false}
             sizes="(max-width: 768px) 35vw, 400px"
-            className="absolute -left-16 sm:-left-20 lg:left-0 top-0 h-full w-auto max-w-70 sm:max-w-none object-cover object-left select-none"
+            className="hidden lg:block absolute -left-16 sm:-left-20 lg:left-0 top-0 h-full w-auto max-w-70 sm:max-w-none object-cover object-left select-none"
           />
+
+          {/* Desktop right glass */}
           <Image
             src="/glassesRight.png"
-            alt=""
+            alt="Right Glass Element"
             width={460}
             height={1080}
             priority
             draggable={false}
             sizes="(max-width: 768px) 35vw, 400px"
-            className="absolute -right-16 sm:-right-20 lg:right-0 top-0 h-full w-auto max-w-70 sm:max-w-none object-cover object-right select-none"
+            className="hidden lg:block absolute -right-16 sm:-right-20 lg:right-0 top-0 h-full w-auto max-w-70 sm:max-w-none object-cover object-right select-none"
           />
         </div>
 

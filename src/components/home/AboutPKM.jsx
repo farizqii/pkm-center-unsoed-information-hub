@@ -56,13 +56,13 @@ export default function AboutPKM() {
         <div className="flex flex-col gap-4 xl:flex-row">
           <Link
             href="/our-team"
-            className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-semibold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
+            className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
           >
             Our Team
           </Link>
           <Link
             href="/information"
-            className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-semibold text-white ring-2 ring-black transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
+            className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
           >
             Information & Resources
           </Link>
