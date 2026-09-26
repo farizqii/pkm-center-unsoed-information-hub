@@ -5,7 +5,7 @@ export default function HeroSection() {
       className="relative mx-auto flex min-h-screen w-full flex-col items-center justify-center px-4 py-20 sm:px-6 lg:px-8"
     >
       <div className="flex w-full max-w-7xl flex-col items-center text-center">
-        <h1 className="text-xl font-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
+        <h1 className="text-xl font-normal text-white sm:text-2xl md:text-2xl lg:text-3xl">
           Selamat Datang di
         </h1>
 
