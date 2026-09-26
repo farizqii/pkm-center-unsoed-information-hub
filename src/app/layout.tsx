@@ -11,9 +11,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "PKM Center Unsoed Information Hub",
+  title: "PKM Center Unsoed Information Hub 2026",
   description:
-    "Aplikasi Information Hub PKM Center Unsoed adalah sebuah website informasional...",
+    "Aplikasi Information Hub PKM Center Unsoed adalah sebuah website informasional untuk memberikan wawasan yang lebih lengkap kepada KBMU.",
+  icons: "/logo-pkm-center.png",
 };
 
 export default function RootLayout({
@@ -38,7 +39,7 @@ export default function RootLayout({
             priority
             draggable={false}
             sizes="100vw"
-            className="w-full h-full object-cover object-center scale-125 lg:hidden"
+            className="w-full h-full object-cover object-center scale-125 opacity-80 lg:opacity-15"
           />
 
           {/* Desktop left glass */}

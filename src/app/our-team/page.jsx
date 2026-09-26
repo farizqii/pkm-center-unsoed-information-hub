@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Our Team - PKM Center Unsoed 2026",
+};
+
 export default function OurTeamPage() {
   return (
     <main
