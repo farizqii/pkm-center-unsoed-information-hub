@@ -39,7 +39,7 @@ export default function RootLayout({
             priority
             draggable={false}
             sizes="100vw"
-            className="w-full h-full object-cover object-center scale-125 opacity-80 lg:opacity-15"
+            className="w-full h-full object-cover object-center scale-150 opacity-30 lg:opacity-15"
           />
 
           {/* Desktop left glass */}

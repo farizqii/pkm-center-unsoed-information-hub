@@ -1,22 +1,36 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function AboutPKM() {
   return (
     <section
       id="AboutPKM"
-      className="py-15 px-15 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-12 xl:flex-row"
+      className="px-15 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-12 xl:flex-row"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[1600px] xl:w-[1600px] xl:h-[600px] bg-black/15 rounded-full blur-3xl -z-10"></div>
-      <div className="flex aspect-square w-full max-w-md items-center justify-center bg-transparent">
+      <motion.div
+        className="flex aspect-square w-full max-w-md items-center justify-center"
+        animate={{
+          y: [0, -20, 0],
+        }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
         <Image
           src="/logo-pkm-center.png"
           alt="PKM Center Unsoed"
           width={800}
           height={800}
           className="h-auto w-full object-contain"
+          priority
         />
-      </div>
+      </motion.div>
 
       <div className="flex w-full flex-col lg:w-7/12">
         <h1 className="font-bold text-center xl:text-left sm:text-3xl md:text-4xl">
@@ -68,6 +82,7 @@ export default function AboutPKM() {
           </Link>
         </div>
       </div>
+      <div className="py-2"></div>
     </section>
   );
 }

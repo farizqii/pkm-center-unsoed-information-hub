@@ -143,7 +143,7 @@ export default function Footer() {
 
           {/* Bottom Copyright */}
           <div className="mt-10 border-t border-white/10 pt-6 text-center lg:text-left">
-            <p className="text-xs font-light text-white/60">
+            <p className="text-xs font-light text-white">
               &copy; {new Date().getFullYear()} PKM Center Unsoed
             </p>
           </div>
