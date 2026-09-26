@@ -32,7 +32,7 @@ export default function Navbar() {
             <div className="flex flex-1 items-center gap-3 hover:scale-105 transition-transform ease-in-out">
               <Image
                 src="/logo-pkm-center.png"
-                alt="Euqin's Pizzas Logo"
+                alt="PKM Center Unsoed"
                 width={50}
                 height={50}
                 className="object-contain"

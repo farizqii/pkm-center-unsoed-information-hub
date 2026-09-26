@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
 import Image from "next/image";
 
 const montserrat = Montserrat({
@@ -49,8 +50,13 @@ export default function RootLayout({
           />
         </div>
 
-        <div id="app" data-v-app className="relative z-0">
-          {children}
+        <div
+          id="app"
+          data-v-app
+          className="relative z-0 flex min-h-screen flex-col justify-between"
+        >
+          <div className="flex-1">{children}</div>
+          <Footer />
         </div>
       </body>
     </html>
