@@ -30,7 +30,7 @@ export default function HeroSection() {
         </h1>
 
         <h2 className="mt-3 flex flex-col items-center text-center font-black italic tracking-tight text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[4rem] leading-tight">
-          <span className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent lg:whitespace-nowrap">
+          <span className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent whitespace-nowrap pr-3">
             Program Kreativitas Mahasiswa Center Unsoed
           </span>
           <span className="mt-1 text-white md:mt-2">Information Hub</span>
