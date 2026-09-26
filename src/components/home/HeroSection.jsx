@@ -1,9 +1,29 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section
       id="HeroSection"
       className="relative mx-auto flex min-h-screen w-full flex-col items-center justify-center px-4 py-20 sm:px-6 lg:px-8"
     >
+      <div className="pointer-events-none absolute -inset-10 -z-10 overflow-hidden">
+        <Image
+          src="/glassesLeft.png"
+          alt="glassLeft"
+          width={400}
+          height={400}
+          sizes="(max-width: 768px) 50vw, 400px"
+          className="absolute -left-30 top-0 h-auto w-1/2 lg:left-0 lg:w-100"
+        />
+        <Image
+          src="/glassesRight.png"
+          alt="glassRight"
+          width={400}
+          height={400}
+          sizes="(max-width: 768px) 50vw, 400px"
+          className="absolute -right-30 top-0 h-auto w-1/2 lg:right-0 lg:w-100"
+        />
+      </div>
       <div className="flex w-full max-w-7xl flex-col items-center text-center">
         <h1 className="text-xl font-normal text-white sm:text-2xl md:text-2xl lg:text-3xl hover:scale-105 transition-transform ease-in-out">
           Selamat Datang di
