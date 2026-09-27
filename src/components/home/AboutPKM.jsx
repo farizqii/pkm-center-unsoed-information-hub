@@ -14,10 +14,10 @@ export default function AboutPKM() {
       <motion.div
         className="flex aspect-square w-full max-w-md items-center justify-center"
         animate={{
-          y: [0, -20, 0],
+          y: [0, -25, 0],
         }}
         transition={{
-          duration: 4,
+          duration: 3,
           repeat: Infinity,
           ease: "easeInOut",
         }}
@@ -34,7 +34,9 @@ export default function AboutPKM() {
 
       <div className="flex w-full flex-col lg:w-7/12">
         <h1 className="font-bold text-center xl:text-left sm:text-3xl md:text-4xl">
-          Program Kreativitas Mahasiswa Center
+          <span className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent">
+            Program Kreativitas Mahasiswa Center
+          </span>
           <br />
           <span className="font-semibold text-sm sm:text-2xl md:text-3xl">
             Universitas Jenderal Soedirman
@@ -70,19 +72,19 @@ export default function AboutPKM() {
         <div className="flex flex-col gap-4 xl:flex-row">
           <Link
             href="/our-team"
-            className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
+            className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] px-6 py-2 text-center text-sm font-semibold text-black transition-transform hover:scale-105 hover:text-white hover:border-[#F2A902]"
           >
             Our Team
           </Link>
           <Link
             href="/information"
-            className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-[#F2A902] px-6 py-2 text-center text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-white hover:text-[#F2A902] hover:border-[#F2A902]"
+            className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] px-6 py-2 text-center text-sm font-semibold text-black transition-transform hover:scale-105 hover:text-white hover:border-[#F2A902]"
           >
             Information & Resources
           </Link>
         </div>
       </div>
-      <div className="py-2"></div>
+      <div className="py-5"></div>
     </section>
   );
 }
