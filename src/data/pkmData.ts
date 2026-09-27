@@ -39,4 +39,14 @@ export const pkmData = [
     Description:
       "PKM Video Gagasan Konstruktif: Program penyampaian isu-isu strategis bangsa beserta solusi futuristik dan imajinatif yang dikemas dalam bentuk media video naratif yang menarik.",
   },
+  {
+    Name: "PKM-GFT",
+    Description:
+      "PKM Gagasan Futuristis Tertulis: Program penulisan karya tulis ilmiah yang berisikan gagasan solutif, visioner, dan futuristik untuk merespons isu-isu strategis atau tantangan pembangunan bangsa di masa depan.",
+  },
+  {
+    Name: "PKM-AI",
+    Description:
+      "PKM Artikel Ilmiah: Program penulisan artikel ilmiah berbasis hasil kegiatan akademik yang telah selesai dilaksanakan oleh mahasiswa, seperti kegiatan riset, pengabdian masyarakat, studi lapangan, atau KKN.",
+  },
 ];
