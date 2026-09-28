@@ -47,25 +47,28 @@ export default function AboutPKM() {
 
         <div className="mb-8 flex flex-col gap-4 font-extralight text-xs text-center xl:text-left md:text-base">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue
-            sapien, mollis vel arcu id, efficitur eleifend urna. Cras sed
-            imperdiet velit. Nullam eu lacinia urna. Curabitur scelerisque
-            tellus dignissim, ultricies lacus nec, auctor purus. Donec sed
-            tortor nisi. Etiam ut viverra elit. Pellentesque est elit, dapibus
-            at ante non, luctus rhoncus metus. Aenean pellentesque finibus dui,
-            tempor ultrices ligula interdum et. Donec at odio feugiat, commodo
-            mi ut, semper ligula. Nunc id nisi sem. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Vestibulum arcu arcu, venenatis ac
-            aliquam vel, fermentum vel urna. In sapien metus, porta sed bibendum
-            id, condimentum nec nisl. Nam eget sapien id mauris tempus pulvinar.
+            Program Kreativitas Mahasiswa atau disebut PKM adalah sebuah program
+            nasional yang diselenggarakan oleh Kementerian Pendidikan Tinggi,
+            Sains, dan Teknologi untuk mengantarkan mahasiswa mencapai taraf
+            pencerahan kreativitas dan inovasi berlandaskan penguasaan sains dan
+            teknologi serta keimanan yang tinggi. Dalam rangka mempersiapkan
+            diri menjadi pemimpin yang cendekiawan, wirausahawan mandiri dan
+            arif, mahasiswa diberi peluang untuk mengimplementasikan kemampuan,
+            keahlian, sikap, tanggung jawab, membangun kerjasama tim maupun
+            mengembangkan kemandirian melalui kegiatan yang kreatif dalam bidang
+            ilmu yang ditekuni. Program kreativitas yang dikhususkan bagi
+            mahasiswa ini mengikuti perkembangan teknologi dalam era revolusi
+            industri dalam mempersiapkan Sumber Daya Manusia yang mampu bersaing
+            di era global. Di tingkat Perguruan Tinggi, PKM menjadi program
+            rutin dengan pembinaan yang terstruktur, yang berdampak meningkatnya
+            kualitas proposal PKM dan/atau karya tulisnya.
           </p>
           <p>
-            Sed libero ante, accumsan vehicula tristique eget, laoreet nec orci.
-            Curabitur in mi a elit pretium luctus. Pellentesque dapibus libero
-            non orci semper ornare nec rhoncus tellus. Donec venenatis ac enim
-            vel consectetur. Cras bibendum enim sit amet velit tempus, a tempor
-            justo laoreet. Proin et pharetra lorem. Pellentesque nisi orci,
-            scelerisque non aliquam eu, volutpat at nulla.
+            PKM Center Unsoed hadir sebagai pengelola dan pendamping dalam
+            kegiatan PKM mahasiswa Unsoed, mulai dari tahap ide sampai persiapan
+            PIMNAS. Kami juga menyediakan beberapa program kerja untuk
+            mahasiswa/i Unsoed perihal PKM, mulai dari Webinar Sahabat PKM,
+            Kompetisi PKM Rektor Cup, dll.
           </p>
         </div>
 

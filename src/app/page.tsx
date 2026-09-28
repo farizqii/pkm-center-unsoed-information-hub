@@ -14,11 +14,11 @@ export default function Home() {
         <HeroSection />
       </PopUpWrapper>
 
-      <PopUpWrapper delay={0.1}>
+      <PopUpWrapper>
         <AboutPKM />
       </PopUpWrapper>
 
-      <PopUpWrapper delay={0.2}>
+      <PopUpWrapper>
         <PKMCategory />
       </PopUpWrapper>
     </main>

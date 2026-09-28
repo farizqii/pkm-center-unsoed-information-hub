@@ -47,7 +47,7 @@ export default function Information() {
         id="Information"
         className="py-35 px-6 sm:px-8 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-8 max-w-7xl"
       >
-        <h1 className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent text-2xl lg:text-5xl xl:text-7xl font-bold italic text-center">
+        <h1 className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent text-2xl lg:text-5xl xl:text-7xl font-bold italic text-center pr-3">
           Information & Resources
         </h1>
 
