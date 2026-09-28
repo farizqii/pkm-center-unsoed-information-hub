@@ -5,7 +5,7 @@ export default function HeroSection() {
       className="min-h-dvh relative mx-auto flex w-full flex-col items-center justify-center px-6 sm:px-10"
     >
       {/* Ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] sm:w-[800px] sm:h-[400px] md:w-[1600px] md:h-[600px] bg-white/10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] sm:w-[800px] sm:h-[400px] md:w-[1600px] md:h-[600px] bg-white/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto">
         <h2 className="text-center font-normal text-white text-sm sm:text-base md:text-lg">
