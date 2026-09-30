@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+// import PopUpWrapper from "../PopUp";
 
 export default function AboutPKM() {
   return (
@@ -10,7 +11,25 @@ export default function AboutPKM() {
       id="AboutPKM"
       className="px-15 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-12 xl:flex-row"
     >
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[1600px] xl:w-[1600px] xl:h-[600px] bg-black/15 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-[1600px] xl:w-[1600px] xl:h-150 bg-black/15 rounded-full blur-3xl -z-10"></div>
+      <Image
+        src="/line1.png"
+        alt="Cloud Left Down"
+        sizes="100vw"
+        width={100}
+        height={100}
+        draggable={false}
+        className="absolute top-[95%] md:top-[85%] left-[-3%] md:left-[2%] w-50 md:w-135"
+      ></Image>
+      <Image
+        src="/line2.png"
+        alt="Cloud Left Down"
+        sizes="100vw"
+        width={100}
+        height={100}
+        draggable={false}
+        className="absolute top-[95%] md:top-[85%] right-[-3%] md:right-[2%] w-50 md:w-135"
+      ></Image>
       <motion.div
         className="flex aspect-square w-full max-w-md items-center justify-center"
         animate={{
