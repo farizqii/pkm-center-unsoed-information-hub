@@ -11,7 +11,9 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="relative flex flex-col justify-between overflow-hidden">
-      <HeroSection />
+      <PopUpWrapper>
+        <HeroSection />
+      </PopUpWrapper>
 
       <PopUpWrapper>
         <AboutPKM />

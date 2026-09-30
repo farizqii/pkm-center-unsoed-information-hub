@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import PopUpWrapper from "../PopUp";
+// import PopUpWrapper from "../PopUp";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -46,22 +46,21 @@ export default function HeroSection() {
       ></Image>
       {/* Ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-75 sm:w-200 sm:h-100 md:w-[1600px] md:h-150 bg-white/5 rounded-full blur-3xl -z-10"></div>
-      <PopUpWrapper>
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <h2 className="text-center font-normal text-white text-sm sm:text-base md:text-lg">
-            Selamat Datang di
-          </h2>
 
-          <h1 className="mt-3 flex flex-col items-center text-center font-black italic tracking-tight leading-tight">
-            <span className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent pr-3 xl:whitespace-nowrap text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
-              Program Kreativitas Mahasiswa Center Unsoed
-            </span>
-            <span className="mt-1 text-white md:mt-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl">
-              Information Hub
-            </span>
-          </h1>
-        </div>
-      </PopUpWrapper>
+      <div className="relative z-10 max-w-4xl mx-auto">
+        <h2 className="text-center font-normal text-white text-sm sm:text-base md:text-lg">
+          Selamat Datang di
+        </h2>
+
+        <h1 className="mt-3 flex flex-col items-center text-center font-black italic tracking-tight leading-tight">
+          <span className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent pr-3 xl:whitespace-nowrap text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
+            Program Kreativitas Mahasiswa Center Unsoed
+          </span>
+          <span className="mt-1 text-white md:mt-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl">
+            Information Hub
+          </span>
+        </h1>
+      </div>
     </section>
   );
 }
