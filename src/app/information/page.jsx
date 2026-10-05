@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PopUpWrapper from "@/src/components/PopUp";
+import Image from "next/image";
 
 import { mediaCollab } from "../../data/mediaCollab";
 import { pimnas38 } from "../../data/pimnas38";
@@ -47,6 +48,25 @@ export default function Information() {
         id="Information"
         className="py-35 px-6 sm:px-8 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-8 max-w-7xl"
       >
+        <Image
+          src="/elemen3.png"
+          alt="Cloud Right Down"
+          sizes="100vw"
+          width={100}
+          height={100}
+          draggable={false}
+          className="absolute top-[3.3%] md:top-[2.8%] left-[-5%] md:left-[-30%] w-50 md:w-240 -z-10"
+        ></Image>
+        <Image
+          src="/elemen4.png"
+          alt="Cloud Right Down"
+          sizes="100vw"
+          width={100}
+          height={100}
+          draggable={false}
+          className="absolute top-[3.3%] md:top-[2.8%] right-[-5%] md:right-[-30%] w-50 md:w-240 -z-10"
+        ></Image>
+
         <h1 className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent text-2xl lg:text-5xl xl:text-7xl font-bold italic text-center pr-3">
           Information & Resources
         </h1>
@@ -131,6 +151,25 @@ export default function Information() {
             ))}
           </ul>
         </div>
+
+        <Image
+          src="/elemen1.png"
+          alt="Cloud Right Down"
+          sizes="100vw"
+          width={100}
+          height={100}
+          draggable={false}
+          className="absolute top-[90%] md:top-[78%] left-[-50%] md:left-[-35%] w-250 -z-10"
+        ></Image>
+        <Image
+          src="/elemen2.png"
+          alt="Cloud Right Down"
+          sizes="100vw"
+          width={100}
+          height={100}
+          draggable={false}
+          className="absolute top-[90%] md:top-[78%] right-[-50%] md:right-[-35%] w-250 -z-10"
+        ></Image>
       </section>
     </PopUpWrapper>
   );
