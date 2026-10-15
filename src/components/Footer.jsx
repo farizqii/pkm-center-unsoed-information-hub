@@ -88,10 +88,10 @@ export default function Footer() {
 
                 {/* Whatsapp */}
                 <Link
-                  href="https://web.whatsapp.com/"
+                  href="http://wa.me/6281391074890"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="TikTok PKM Center Unsoed"
+                  aria-label="WhatsApp PKM Center Unsoed"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#001133] transition-all hover:scale-110 hover:bg-white shadow"
                 >
                   <svg
@@ -106,7 +106,7 @@ export default function Footer() {
 
                 {/* Email*/}
                 <Link
-                  href="https://mail.google.com/"
+                  href="mailto:pkmcenterunsoed1963@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Email PKM Center Unsoed"
