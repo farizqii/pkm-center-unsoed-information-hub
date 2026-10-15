@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function PopUpWrapper({
   children,
   delay = 0,
-  margin = "0px 0px -200px 0px", // starts 150px before entering the screen
+  margin = "0px 0px -50px 0px",
 }) {
   return (
     <motion.div

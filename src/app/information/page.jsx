@@ -46,7 +46,7 @@ export default function Information() {
     <PopUpWrapper>
       <section
         id="Information"
-        className="py-35 px-6 sm:px-8 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-8 max-w-7xl"
+        className="pt-28 pb-16 sm:py-28 lg:py-35 px-4 sm:px-8 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-8 max-w-7xl"
       >
         <Image
           src="/elemen3.png"
@@ -83,7 +83,7 @@ export default function Information() {
         {/* Media Partner & Collaboration Section */}
         <div className="w-full">
           <ul className="grid w-full list-none grid-cols-1 gap-5 rounded-3xl bg-white p-6 shadow-[inset_0_10px_20px_0_rgba(0,0,0,0.4)] md:p-10">
-            <h1 className="text-md lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
+            <h1 className="text-base sm:text-lg lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
               MEDIA PARTNER & MEDIA COLLABORATION
             </h1>
             {linkMediaCollab.map((linkitem) => (
@@ -95,7 +95,7 @@ export default function Information() {
         {/* PIMNAS 38 Section */}
         <div className="w-full">
           <ul className="grid w-full list-none grid-cols-1 gap-5 rounded-3xl bg-white p-6 shadow-[inset_0_10px_20px_0_rgba(0,0,0,0.4)] md:p-10">
-            <h1 className="text-md lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
+            <h1 className="text-base sm:text-lg lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
               PENGUMUMAN PESERTA PIMNAS KE-38 TAHUN 2025
             </h1>
             {linkPimnas38.map((linkitem) => (
@@ -107,7 +107,7 @@ export default function Information() {
         {/* PKM Dikti 2025 Section */}
         <div className="w-full">
           <ul className="grid w-full list-none grid-cols-1 gap-5 rounded-3xl bg-white p-6 shadow-[inset_0_10px_20px_0_rgba(0,0,0,0.4)] md:p-10">
-            <h1 className="text-md lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
+            <h1 className="text-base sm:text-lg lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
               PKM DIKTI 2025
             </h1>
             {linkPkmDikti2025.map((linkitem) => (
@@ -119,7 +119,7 @@ export default function Information() {
         {/* PKM Rektor Cup 4 Section */}
         <div className="w-full">
           <ul className="grid w-full list-none grid-cols-1 gap-5 rounded-3xl bg-white p-6 shadow-[inset_0_10px_20px_0_rgba(0,0,0,0.4)] md:p-10">
-            <h1 className="text-md lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
+            <h1 className="text-base sm:text-lg lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
               PKM REKTOR CUP IV 2024
             </h1>
             {linkPkmRektorCup4.map((linkitem) => (
@@ -131,7 +131,7 @@ export default function Information() {
         {/* PKM Dikti 2024 Section */}
         <div className="w-full">
           <ul className="grid w-full list-none grid-cols-1 gap-5 rounded-3xl bg-white p-6 shadow-[inset_0_10px_20px_0_rgba(0,0,0,0.4)] md:p-10">
-            <h1 className="text-md lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
+            <h1 className="text-base sm:text-lg lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
               PKM DIKTI 2024
             </h1>
             {linkPkmDikti2024.map((linkitem) => (
@@ -143,7 +143,7 @@ export default function Information() {
         {/* PKM Rektor Cup 3 Section */}
         <div className="w-full">
           <ul className="grid w-full list-none grid-cols-1 gap-5 rounded-3xl bg-white p-6 shadow-[inset_0_10px_20px_0_rgba(0,0,0,0.4)] md:p-10">
-            <h1 className="text-md lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
+            <h1 className="text-base sm:text-lg lg:text-2xl font-bold italic text-center text-black text-shadow-sm text-shadow-black">
               PKM REKTOR CUP III 2023
             </h1>
             {linkPkmRektorCup3.map((linkitem) => (

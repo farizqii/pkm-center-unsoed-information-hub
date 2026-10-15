@@ -61,7 +61,7 @@ function DetailPhoto({ image, alt, blurHash }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div className="relative z-10 flex h-full w-[260px] sm:w-[320px] items-center justify-center">
+    <div className="relative z-10 flex h-full w-[220px] sm:w-[280px] md:w-[320px] items-center justify-center">
       {blurHash && (
         <div
           className={`absolute inset-6 rounded-3xl overflow-hidden transition-opacity duration-300 pointer-events-none ${
@@ -234,7 +234,7 @@ export default function OurTeamContent() {
           width={100}
           height={100}
           draggable={false}
-          className="absolute top-[2.8%] left-[1%] w-240 pointer-events-none select-none"
+          className="absolute top-[2.8%] left-1/2 -translate-x-1/2 lg:left-[-7%] lg:translate-x-0 w-[550px] sm:w-[700px] lg:w-240 max-w-none pointer-events-none select-none"
         />
 
         {/* Person Name & Role */}
@@ -245,7 +245,7 @@ export default function OurTeamContent() {
         </div>
 
         {/* Center Artwork: Person with BlurHashCanvas loading state */}
-        <div className="relative my-auto flex h-[340px] w-full max-w-lg items-center justify-center sm:h-[400px]">
+        <div className="relative my-auto flex h-[280px] sm:h-[340px] md:h-[400px] w-full max-w-lg items-center justify-center">
           <DetailPhoto
             key={selected.image}
             image={selected.image}
@@ -301,7 +301,7 @@ export default function OurTeamContent() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.92, y: 15 }}
               transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              className="relative z-10 w-full max-w-4xl max-h-[85vh] flex flex-col rounded-3xl border-2 border-[#EEAB01]/60 bg-linear-to-b from-[#001b44] via-[#001538] to-[#000f28] p-6 sm:p-8 shadow-2xl text-white my-auto overflow-hidden"
+              className="relative z-10 w-full max-w-4xl max-h-[88vh] flex flex-col rounded-3xl border-2 border-[#EEAB01]/60 bg-linear-to-b from-[#001b44] via-[#001538] to-[#000f28] p-4 sm:p-6 md:p-8 shadow-2xl text-white my-auto overflow-hidden"
             >
               {/* Header Bar */}
               <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-4">

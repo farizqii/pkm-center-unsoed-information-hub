@@ -9,7 +9,7 @@ export default function AboutPKM() {
   return (
     <section
       id="AboutPKM"
-      className="px-15 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-12 xl:flex-row"
+      className="px-6 sm:px-10 lg:px-15 min-h-dvh scroll-mt-20 relative mx-auto flex w-full flex-col items-center justify-center gap-12 xl:flex-row"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-[1600px] xl:w-[1600px] xl:h-150 bg-black/15 rounded-full blur-3xl -z-10"></div>
       <Image
@@ -19,7 +19,7 @@ export default function AboutPKM() {
         width={100}
         height={100}
         draggable={false}
-        className="absolute top-[95%] md:top-[85%] left-[-3%] md:left-[2%] w-50 md:w-135"
+        className="absolute top-[95%] lg:top-[96%] xl:top-[85%] left-[-3%] md:left-[2%] w-50 lg:w-135"
       ></Image>
       <Image
         src="/line2.png"
@@ -28,7 +28,7 @@ export default function AboutPKM() {
         width={100}
         height={100}
         draggable={false}
-        className="absolute top-[95%] md:top-[85%] right-[-3%] md:right-[2%] w-50 md:w-135"
+        className="absolute top-[95%] md:top-[96%] xl:top-[85%] right-[-3%] md:right-[2%] w-50 lg:w-135"
       ></Image>
       <motion.div
         className="flex aspect-square w-full max-w-md items-center justify-center"
@@ -51,7 +51,7 @@ export default function AboutPKM() {
         />
       </motion.div>
 
-      <div className="flex w-full flex-col lg:w-7/12">
+      <div className="flex w-full flex-col xl:w-7/12">
         <h1 className="font-bold text-center xl:text-left sm:text-3xl md:text-4xl">
           <span className="bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] bg-clip-text text-transparent">
             Program Kreativitas Mahasiswa Center
@@ -91,7 +91,7 @@ export default function AboutPKM() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 xl:flex-row">
+        <div className="flex flex-col gap-4 sm:flex-row">
           <Link
             href="/our-team"
             className="cursor-pointer rounded-2xl shadow-md shadow-[#F2A902] border border-white bg-linear-to-r from-[#EEAB01] via-[#FFFFFF] to-[#EEAB01] px-6 py-2 text-center text-sm font-semibold text-black transition-transform hover:scale-105 hover:border-[#F2A902]"

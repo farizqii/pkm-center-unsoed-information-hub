@@ -8,9 +8,9 @@ export default function Footer() {
       <div className="w-full rounded-t-[2.5rem] lg:rounded-t-[3.5rem] border-t border-white/80 bg-linear-to-b from-[#003399] to-[#001133] via-[#002266] px-6 py-10 sm:px-12 sm:py-12 lg:px-20 lg:py-14 shadow-2xl shadow-white">
         <div className="mx-auto max-w-7xl">
           {/* Main Footer Content */}
-          <div className="flex flex-col items-center text-center gap-10 lg:flex-row lg:items-start lg:text-left lg:justify-between lg:gap-12">
+          <div className="flex flex-col items-center text-center gap-8 md:flex-row md:flex-wrap md:justify-between md:items-start md:text-left lg:gap-10">
             {/* Column 1: Brand Logo & Title */}
-            <div className="flex items-center justify-center lg:justify-start gap-3 lg:w-1/3">
+            <div className="flex items-center justify-center md:justify-start gap-3 flex-1 min-w-[220px]">
               <div className="flex aspect-square h-14 w-14 shrink-0 items-center justify-center shadow-md">
                 <Image
                   src="/logo-pkm-center.png"
@@ -31,11 +31,9 @@ export default function Footer() {
             </div>
 
             {/* Column 2: Address & Contact Information */}
-            <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-1 text-white lg:w-5/12">
+            <div className="flex flex-col items-center text-center md:items-start md:text-left gap-1 text-white flex-1 min-w-[260px]">
               <h3 className="text-base sm:text-lg font-bold leading-snug">
                 Universitas Jenderal Soedirman
-                {/* <br />
-                Purwokerto */}
               </h3>
 
               <p className="text-xs sm:text-sm font-light leading-relaxed text-white">
@@ -45,19 +43,10 @@ export default function Footer() {
                 <br />
                 Kabupaten Banyumas, Jawa Tengah 53121
               </p>
-
-              {/* <div className="mt-1">
-                <h4 className="text-xs sm:text-sm font-bold text-white">
-                  Hubungi Kami
-                </h4>
-                <p className="text-xs sm:text-sm font-light text-white">
-                  +62 831-1234-1234 (Nama CP)
-                </p>
-              </div> */}
             </div>
 
             {/* Column 3: Social Media */}
-            <div className="flex flex-col items-center lg:items-end gap-3 lg:w-1/4">
+            <div className="flex flex-col items-center md:items-end gap-3 flex-initial">
               <h3 className="text-base sm:text-lg font-bold text-white">
                 Hubungi Kami!
               </h3>

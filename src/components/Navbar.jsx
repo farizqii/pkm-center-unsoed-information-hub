@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full backdrop-blur-sm">
       <div className="w-full bg-linear-to-b from-[#001133] via-[#002266] to-[#003399] border-b border-white/10 shadow-md shadow-white">
-        <div className="flex h-16 items-center justify-between px-5 xl:px-55">
+        <div className="flex h-16 items-center justify-between px-5 lg:px-10 xl:px-20 2xl:px-40">
           {/* Logo */}
           <Link href="/">
             <div className="flex flex-1 items-center gap-3 hover:scale-105 transition-transform ease-in-out">
@@ -49,7 +49,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex md:flex-wrap md:gap-15 text-md font-semibold text-white">
+          <nav className="hidden lg:flex lg:gap-6 xl:gap-10 text-sm font-semibold text-white">
             {navigation.map((item) =>
               item.id ? (
                 <button
