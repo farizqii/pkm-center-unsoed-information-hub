@@ -1,6 +1,6 @@
 export const formPengumpulanProposal = [
   {
-    Name: "Pengumpulan Proposal PKM Gelombang 1",
-    href: "https://bit.ly/PengumpulanProposalPKMUnsoed1",
+    Name: "Buku Panduan PKM 2026",
+    href: "https://drive.google.com/drive/folders/1XvypY1N6yljpRNiUZpVh9w-d9usTtual",
   },
 ];
