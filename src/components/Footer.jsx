@@ -88,7 +88,7 @@ export default function Footer() {
 
                 {/* Whatsapp */}
                 <Link
-                  href="http://wa.me/6281391074890"
+                  href="http://wa.me/6285113915384"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp PKM Center Unsoed"
