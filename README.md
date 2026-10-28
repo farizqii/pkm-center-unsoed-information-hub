@@ -76,3 +76,7 @@ _Alternatif terpadu pengganti Linktree untuk mempermudah akses arsip dan layanan
 
 - **Navigation Bar**: Navigasi responsif dan ramah perangkat seluler (_mobile-friendly_) untuk akses cepat ke seluruh sub-halaman.
 - **Footer**: Identitas instansi, tautan sosial media resmi, formulir kontak, dan hak cipta.
+
+### 5. 🌐 Deployment
+
+- https://pkmcenterunsoed.web.id/
